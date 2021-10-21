@@ -1,0 +1,8 @@
+Show[ListPointPlot3D[{S, Q, R}], 
+ Plot3D[(*уравнение на равнината във вида z=f(x,y) - 
+  дясна част*), {x, -5, 5}, {y, -5, 5}], 
+ Graphics3D[{Arrowheads -> 0.02, 
+   Arrow[{(*начало и край на нормалния вектор*)}], {Arrowheads -> 
+     0.002, Arrow[{(*начало и край на вектора QR*)}]}, {Arrowheads -> 
+     0.002, Arrow[{(*начало и край на вектора QS*)}]}}], 
+ PlotRange -> All, BoxRatios -> Automatic]
